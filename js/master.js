@@ -267,9 +267,15 @@ document.addEventListener("click", (e) => {
 
 // Start Section Loading
 let loadingOv = document.querySelector(".loading-overlay");
+
     window.addEventListener("load", function(event) {
+        
         setTimeout(function(){
+            
             console.log("Toutes les ressources sont chargées !");
-            loadingOv.style.opacity = "0";
+            
+            loadingOv.style.display = "none";
+            
         }, 1000);
+        
     });
